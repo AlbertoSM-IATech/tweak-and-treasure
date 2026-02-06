@@ -46,7 +46,7 @@ const PainPoints = () => {
           animationDelay: `${index * 0.1}s`
         }}>
               <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-lg bg-destructive/10 flex items-center justify-center mb-4 group-hover:bg-destructive/20 transition-colors">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors bg-fuchsia-300">
                   <point.icon className="h-6 w-6 text-destructive" />
                 </div>
                 <h3 className="font-display text-lg font-semibold mb-2">{point.title}</h3>
@@ -58,11 +58,11 @@ const PainPoints = () => {
         {/* Transition to Solution */}
         <div className="text-center">
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/30">
-            <span className="text-2xl">✨</span>
+            <span className="text-2xl">​</span>
             <span className="font-display text-lg font-semibold text-primary">
               Imagina tenerlo todo bajo control
             </span>
-            <span className="text-2xl">✨</span>
+            <span className="text-2xl">​</span>
           </div>
         </div>
       </div>
