@@ -1,26 +1,15 @@
 import { Badge } from "@/components/ui/badge";
 import dashboardPreview from "@/assets/dashboard-preview.png";
-
 const DashboardShowcase = () => {
-  const highlights = [
-    "Dashboard centralizado",
-    "Métricas en tiempo real",
-    "Interfaz intuitiva",
-    "Acceso desde cualquier lugar",
-  ];
-
-  return (
-    <section className="py-20 bg-card/50">
+  const highlights = ["Dashboard centralizado", "Métricas en tiempo real", "Interfaz intuitiva", "Acceso desde cualquier lugar"];
+  return <section className="py-20 bg-card/50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <Badge 
-            variant="outline" 
-            className="mb-4 px-4 py-2 border-secondary/50 bg-secondary/10 text-secondary font-medium"
-          >
+          <Badge variant="outline" className="mb-4 px-4 py-2 border-secondary/50 bg-secondary/10 text-secondary font-medium">
             Vista previa
           </Badge>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
             Tu centro de <span className="text-secondary">comando</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -31,25 +20,16 @@ const DashboardShowcase = () => {
 
         {/* Highlights */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {highlights.map((highlight) => (
-            <div
-              key={highlight}
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/30"
-            >
+          {highlights.map(highlight => <div key={highlight} className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/30">
               <div className="w-2 h-2 rounded-full bg-secondary" />
               <span className="text-sm font-medium">{highlight}</span>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Dashboard Image */}
         <div className="relative max-w-5xl mx-auto">
           <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl glow-secondary">
-            <img 
-              src={dashboardPreview} 
-              alt="Publify Dashboard Preview" 
-              className="w-full h-auto"
-            />
+            <img src={dashboardPreview} alt="Publify Dashboard Preview" className="w-full h-auto" />
           </div>
 
           {/* Stats overlay */}
@@ -71,8 +51,6 @@ const DashboardShowcase = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default DashboardShowcase;
