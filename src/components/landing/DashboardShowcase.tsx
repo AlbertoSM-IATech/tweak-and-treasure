@@ -12,15 +12,14 @@ const DashboardShowcase = () => {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
             Tu centro de <span className="text-secondary">comando</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Visualiza toda la información de tu negocio editorial en un dashboard 
-            diseñado para tomar decisiones inteligentes.
+          <p className="text-lg max-w-full mx-auto text-primary">
+            Tus libros en el centro de tu negocio. Visualiza toda la información de tu negocio editorial en un dashboard diseñado para tomar decisiones inteligentes.
           </p>
         </div>
 
         {/* Highlights */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {highlights.map(highlight => <div key={highlight} className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/30">
+          {highlights.map(highlight => <div key={highlight} className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-white">
               <div className="w-2 h-2 rounded-full bg-secondary" />
               <span className="text-sm font-medium">{highlight}</span>
             </div>)}

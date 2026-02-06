@@ -62,7 +62,7 @@ const Ecosystem = () => {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
             Los <span className="text-primary">4 pilares</span> de tu ecosistema
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-full">
             Publify integra todas las áreas clave de un negocio editorial 
             en un ecosistema cohesivo y potente.
           </p>

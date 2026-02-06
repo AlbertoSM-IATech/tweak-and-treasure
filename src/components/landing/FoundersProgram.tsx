@@ -35,14 +35,14 @@ const FoundersProgram = () => {
           {stats.map(stat => <div key={stat.label} className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <stat.icon className="h-6 w-6 text-primary" />
-                <span className="text-4xl font-bold">{stat.number}</span>
+                <span className="text-4xl font-bold text-primary">{stat.number}</span>
               </div>
               <span className="text-sm text-muted-foreground">{stat.label}</span>
             </div>)}
         </div>
 
         {/* Progress bar */}
-        <div className="max-w-md mx-auto mb-12">
+        <div className="max-w-full mx-auto mb-12">
           <div className="h-3 bg-muted rounded-full overflow-hidden">
             <div className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000" style={{
             width: '85%'

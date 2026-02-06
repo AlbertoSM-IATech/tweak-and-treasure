@@ -90,7 +90,7 @@ const Hero = () => {
         animationDelay: "0.6s"
       }}>
           <div className="relative rounded-xl overflow-hidden border border-border shadow-2xl glow-primary">
-            <img src={dashboardPreview} alt="Publify Dashboard" className="w-full h-auto" />
+            <img src={dashboardPreview} alt="Publify Dashboard" className="w-full h-auto object-cover" />
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none" />
           </div>
