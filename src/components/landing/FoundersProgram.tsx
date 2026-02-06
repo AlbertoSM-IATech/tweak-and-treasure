@@ -24,7 +24,7 @@ const FoundersProgram = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white lg:text-6xl">
             Únete como <span className="text-primary">Fundador</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-full mx-auto">
             Sé parte del grupo exclusivo de 20 publishers que darán forma al futuro 
             de Publify con beneficios únicos de por vida.
           </p>

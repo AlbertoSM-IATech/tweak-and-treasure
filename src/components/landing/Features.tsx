@@ -34,7 +34,7 @@ const Features = () => {
     title: "Control de Finanzas",
     description: "Visualiza ingresos, gastos y rentabilidad por libro."
   }];
-  return <section id="features" className="py-20">
+  return <section id="features" className="py-20 bg-inherit">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">

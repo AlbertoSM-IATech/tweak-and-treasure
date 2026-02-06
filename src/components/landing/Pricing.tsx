@@ -100,7 +100,7 @@ const Pricing = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white lg:text-6xl">
             Planes pensados para <span className="text-primary">cada etapa</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-xl">
+          <p className="text-muted-foreground max-w-full mx-auto text-xl">
             Elige el plan que mejor se adapte a tu volumen de publicaciones 
             y escala cuando lo necesites.
           </p>
