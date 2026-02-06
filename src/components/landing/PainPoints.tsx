@@ -34,7 +34,7 @@ const PainPoints = () => {
             Ser publisher independiente{" "}
             <span className="text-primary">no debería ser así</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-full mx-auto">
             Estos son los problemas más comunes que enfrentan los publishers de Amazon KDP.
             ¿Te sientes identificado?
           </p>
