@@ -46,7 +46,7 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in" style={{
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-full mx-auto animate-fade-in" style={{
           animationDelay: "0.2s"
         }}>
             Centraliza la operativa de tu editorial KDP en un único panel. La plataforma todo-en-uno diseñada específicamente para Publishers de Amazon KDP.
