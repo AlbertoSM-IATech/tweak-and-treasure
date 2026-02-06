@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
 
           {/* Feature Indicators */}
-          <div className="flex-wrap mb-12 animate-fade-in flex items-start justify-center gap-[49px] mx-[42px] my-0" style={{
+          <div className="flex-wrap mb-12 animate-fade-in flex items-start justify-center mx-[42px] my-0 gap-[40px]" style={{
           animationDelay: "0.5s"
         }}>
             {features.map(feature => <div key={feature.label} className="flex items-center gap-2 text-sm text-muted-foreground">
