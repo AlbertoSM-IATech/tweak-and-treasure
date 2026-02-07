@@ -1,116 +1,140 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Search, PenTool, BarChart3, Rocket, BookOpen, Key, Target } from "lucide-react";
-import dashboardPreview from "@/assets/dashboard-preview.png";
+import { motion } from "framer-motion";
+import heroComparison from "@/assets/hero-comparison.png";
+
+const NOTION_FORM_URL = "https://wild-paperback-a33.notion.site/2f083e512fb2809aa82cd9439dd91cd9?pvs=105";
+
 const Hero = () => {
-  const pillItems = [{
-    icon: Search,
-    label: "Investiga"
-  }, {
-    icon: PenTool,
-    label: "Crea"
-  }, {
-    icon: BarChart3,
-    label: "Analiza"
-  }, {
-    icon: Rocket,
-    label: "Escala"
-  }];
-  const features = [{
-    icon: BookOpen,
-    label: "Ficha por libro"
-  }, {
-    icon: Key,
-    label: "Análisis de Keywords"
-  }, {
-    icon: Target,
-    label: "Gestión de ADS"
-  }];
-  return <section className="relative pt-32 pb-20 overflow-hidden">
+  const pillItems = [
+    { icon: Search, label: "Investiga" },
+    { icon: PenTool, label: "Crea" },
+    { icon: BarChart3, label: "Analiza" },
+    { icon: Rocket, label: "Escala" }
+  ];
+
+  const features = [
+    { icon: BookOpen, label: "Ficha por libro" },
+    { icon: Key, label: "Análisis de Keywords" },
+    { icon: Target, label: "Gestión de ADS" }
+  ];
+
+  return (
+    <section className="relative pt-32 pb-20 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-full mx-auto text-center mb-12">
+        <div className="max-w-4xl mx-auto text-center mb-12">
           {/* Founders Badge */}
-          <Badge variant="outline" className="mb-6 px-4 py-2 border-primary/50 bg-primary/10 text-primary font-medium animate-fade-in">
-            🎯 Programa de Fundadores - Solo 20 plazas
-          </Badge>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Badge variant="outline" className="mb-6 px-4 py-2 border-primary/50 bg-primary/10 text-primary font-medium">
+              🎯 Programa de Fundadores - Solo 20 plazas
+            </Badge>
+          </motion.div>
 
           {/* Main Title */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in text-white" style={{
-          animationDelay: "0.1s"
-        }}>
+          <motion.h1 
+            className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             Tu Sistema Operativo{" "}
             <span className="text-primary">Editorial</span>
-          </h1>
+          </motion.h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-full mx-auto animate-fade-in" style={{
-          animationDelay: "0.2s"
-        }}>
+          <motion.p 
+            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             Centraliza la operativa de tu editorial KDP en un único panel. La plataforma todo-en-uno diseñada específicamente para Publishers de Amazon KDP.
-          </p>
+          </motion.p>
 
           {/* Feature Pills */}
-          <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in" style={{
-          animationDelay: "0.3s"
-        }}>
-            {pillItems.map(item => <div key={item.label} className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border">
+          <motion.div 
+            className="flex flex-wrap justify-center gap-3 mb-10"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            {pillItems.map((item) => (
+              <div 
+                key={item.label} 
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border"
+              >
                 <item.icon className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium text-white">{item.label}</span>
-              </div>)}
-          </div>
+              </div>
+            ))}
+          </motion.div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in" style={{
-          animationDelay: "0.4s"
-        }}>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg glow-primary">
+          <motion.div 
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg glow-primary"
+              onClick={() => window.open(NOTION_FORM_URL, "_blank")}
+            >
               Reservar mi Plaza
             </Button>
-            <Button size="lg" variant="outline" className="font-semibold px-8 py-6 text-lg border-border hover:bg-card">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="font-semibold px-8 py-6 text-lg border-border hover:bg-card"
+              onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
+            >
               Ver Funcionalidades
             </Button>
-          </div>
+          </motion.div>
 
           {/* Feature Indicators */}
-          <div className="flex-wrap mb-12 animate-fade-in flex items-start justify-center mx-[42px] my-0 gap-[40px]" style={{
-          animationDelay: "0.5s"
-        }}>
-            {features.map(feature => <div key={feature.label} className="flex items-center gap-2 text-sm text-muted-foreground">
+          <motion.div 
+            className="flex flex-wrap justify-center gap-8 mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            {features.map((feature) => (
+              <div key={feature.label} className="flex items-center gap-2 text-sm text-muted-foreground">
                 <feature.icon className="h-4 w-4 text-secondary" />
                 <span>{feature.label}</span>
-              </div>)}
-          </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
 
-        {/* Dashboard Preview */}
-        <div className="relative max-w-5xl mx-auto animate-fade-in-up" style={{
-        animationDelay: "0.6s"
-      }}>
+        {/* Dashboard Preview with Before/After comparison */}
+        <motion.div 
+          className="relative max-w-5xl mx-auto"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+        >
           <div className="relative rounded-xl overflow-hidden border border-border shadow-2xl glow-primary">
-            <img src={dashboardPreview} alt="Publify Dashboard" className="w-full h-auto object-cover" />
-            {/* Overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none" />
+            <img 
+              src={heroComparison} 
+              alt="Publify Dashboard - Antes y Después" 
+              className="w-full h-auto object-cover"
+            />
           </div>
-
-          {/* Floating cards - Before/After */}
-          <div className="absolute -left-4 md:-left-8 top-1/4 bg-card border border-border rounded-lg p-4 shadow-xl animate-float hidden lg:block">
-            <div className="text-xs text-muted-foreground mb-1">Antes</div>
-            <div className="text-2xl font-bold text-destructive">-32%</div>
-            <div className="text-xs text-muted-foreground">ROI mensual</div>
-          </div>
-
-          <div className="absolute -right-4 md:-right-8 top-1/3 bg-card border border-border rounded-lg p-4 shadow-xl animate-float hidden lg:block" style={{
-          animationDelay: "0.5s"
-        }}>
-            <div className="text-xs text-muted-foreground mb-1">Después</div>
-            <div className="text-2xl font-bold text-primary">+127%</div>
-            <div className="text-xs text-muted-foreground">ROI mensual</div>
-          </div>
-        </div>
+        </motion.div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
