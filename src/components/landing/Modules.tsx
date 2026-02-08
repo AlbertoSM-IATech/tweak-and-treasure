@@ -57,7 +57,7 @@ const Modules = () => {
     {
       id: "optimizacion",
       title: "Optimización de Libros",
-      description: "Mejora el rendimiento de tus títulos existentes.",
+      description: "Preconfigura tus libros para ver su viabilidad u optimízalos para ajustar la rentabilidad.",
       features: [
         "Análisis de títulos y subtítulos",
         "Optimización de descripciones",
