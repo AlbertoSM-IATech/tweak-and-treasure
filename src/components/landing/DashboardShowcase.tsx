@@ -5,11 +5,15 @@ import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
 import dashboardPreview from "@/assets/dashboard-preview.png";
 const DashboardShowcase = () => {
-  // Placeholder images - user will provide actual carousel images later
-  const carouselImages = [{
-    src: dashboardPreview,
-    alt: "Dashboard Principal"
-  }];
+  // Carousel images - add more images here as needed
+  // To add images: import them at the top and add to this array
+  const carouselImages = [
+    { src: dashboardPreview, alt: "Dashboard Principal" },
+    // { src: imagen2, alt: "Vista de Biblioteca" },
+    // { src: imagen3, alt: "Análisis de Keywords" },
+    // { src: imagen4, alt: "Gestión Financiera" },
+    // { src: imagen5, alt: "Panel de Marketing" },
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const highlights = ["Dashboard centralizado", "Interfaz intuitiva", "Acceso desde cualquier lugar"];
   const nextSlide = () => {
