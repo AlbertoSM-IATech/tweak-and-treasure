@@ -137,7 +137,7 @@ const Pricing = () => {
                     disabled={!plan.available}
                     onClick={() => plan.available && window.open(NOTION_FORM_URL, "_blank")}
                   >
-                    {plan.available ? 'Elegir Plan' : 'Próximamente'}
+                    {plan.available ? 'Únete como Fundador' : 'Próximamente'}
                   </Button>
                 </CardContent>
               </Card>
