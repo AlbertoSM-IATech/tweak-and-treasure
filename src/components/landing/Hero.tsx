@@ -119,12 +119,12 @@ const Hero = () => {
 
         {/* Dashboard Preview with Before/After comparison */}
         <motion.div 
-          className="relative max-w-5xl mx-auto"
+          className="relative max-w-5xl mx-auto px-8 md:px-16"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
         >
-          <div className="relative rounded-xl overflow-hidden border border-border shadow-2xl glow-primary">
+          <div className="relative rounded-xl overflow-visible border border-border shadow-2xl glow-primary">
             <img 
               src={heroComparison} 
               alt="Publify Dashboard - Antes y Después" 
