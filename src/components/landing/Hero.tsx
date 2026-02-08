@@ -131,44 +131,60 @@ const Hero = () => {
               className="w-full h-auto object-cover"
             />
             
-            {/* Before Badge - Animated */}
+            {/* Before Badge - Animated with floating effect */}
             <motion.div 
-              className="absolute left-4 md:left-8 top-1/3 bg-card/95 backdrop-blur-sm border border-destructive/50 rounded-xl px-4 py-3 shadow-lg"
+              className="absolute -left-4 md:-left-6 top-4 md:top-8 bg-card/95 backdrop-blur-sm border border-destructive/50 rounded-2xl px-5 py-4 shadow-xl z-10"
               initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 1.0 }}
+              animate={{ 
+                opacity: 1, 
+                x: 0,
+                y: [0, -8, 0]
+              }}
+              transition={{ 
+                opacity: { duration: 0.5, delay: 1.0 },
+                x: { duration: 0.5, delay: 1.0 },
+                y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.0 }
+              }}
             >
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-destructive/20 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-destructive" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-xl bg-destructive/20 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-destructive" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">Antes</p>
-                  <p className="text-sm font-semibold text-white">Archivos dispersos</p>
-                  <p className="text-xs text-muted-foreground">Excel, carpetas, notas...</p>
+                  <p className="text-sm text-destructive uppercase tracking-wider font-medium">Antes</p>
+                  <p className="text-base md:text-lg font-bold text-white">Archivos dispersos</p>
+                  <p className="text-sm text-muted-foreground">Excel, carpetas, notas...</p>
                 </div>
               </div>
             </motion.div>
             
-            {/* After Badge - Animated */}
+            {/* After Badge - Animated with floating effect */}
             <motion.div 
-              className="absolute right-4 md:right-8 top-1/4 bg-card/95 backdrop-blur-sm border border-primary/50 rounded-xl px-4 py-3 shadow-lg"
+              className="absolute -right-4 md:-right-6 bottom-4 md:bottom-8 bg-card/95 backdrop-blur-sm border border-primary/50 rounded-2xl px-5 py-4 shadow-xl z-10"
               initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 1.2 }}
+              animate={{ 
+                opacity: 1, 
+                x: 0,
+                y: [0, -8, 0]
+              }}
+              transition={{ 
+                opacity: { duration: 0.5, delay: 1.2 },
+                x: { duration: 0.5, delay: 1.2 },
+                y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }
+              }}
             >
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-primary uppercase tracking-wider font-medium">Después</p>
-                  <p className="text-sm font-semibold text-white">Todo en un panel</p>
-                  <p className="text-xs text-muted-foreground">Una ficha por libro</p>
+                  <p className="text-sm text-primary uppercase tracking-wider font-medium">Después</p>
+                  <p className="text-base md:text-lg font-bold text-white">Todo en un panel</p>
+                  <p className="text-sm text-muted-foreground">Una ficha por libro</p>
                 </div>
               </div>
             </motion.div>
