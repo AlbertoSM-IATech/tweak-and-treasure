@@ -146,7 +146,7 @@ const Hero = () => {
         delay: 0.6
       }}>
           <div className="relative rounded-xl overflow-visible border border-border shadow-2xl glow-primary">
-            <img src={heroComparison} alt="Publify Dashboard - Antes y Después" className="w-full h-auto object-cover" />
+            <img alt="Publify Dashboard - Antes y Después" className="w-full h-auto object-cover" src="/lovable-uploads/1505b5cd-6525-42f7-8ec2-abd33da406e2.png" />
             
             {/* Before Badge - Animated with floating effect */}
             <motion.div className="absolute -left-4 md:-left-6 top-4 md:top-8 bg-card/95 backdrop-blur-sm border border-destructive/50 rounded-2xl px-5 py-4 shadow-xl z-10" initial={{
