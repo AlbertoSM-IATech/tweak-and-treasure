@@ -50,19 +50,19 @@ const FAQ = () => {
       faqs: [
         {
           question: "¿Cuáles son los pilares / áreas de Publify?",
-          answer: "Biblioteca (hub), Research, Producción, Finanzas (por libro + global) y Marketing 360 (disponible en el Plan Pro)."
+          answer: "Biblioteca (hub), Research, Producción, Finanzas (por libro + global) y Marketing 360."
         },
         {
           question: "¿Qué incluye el módulo Biblioteca?",
           answer: "Incluye CRUD de libros, ficha completa con metadatos, series/colecciones, research tipo Notion (texto, imágenes, links, checklists) y archivos (portada/contraportada/interior) con QR por libro."
         },
         {
-          question: "¿Qué incluye el módulo de Finanzas?",
-          answer: "Registro manual de ingresos/gastos por libro, dashboard mensual con beneficio por libro y global, e importación rápida (CSV/copy-paste) y exportación. Disponible en los planes Plus y Pro."
+          question: "¿Qué incluye Finanzas en el MVP?",
+          answer: "Registro manual de ingresos/gastos por libro, dashboard mensual con beneficio por libro y global, e importación rápida (CSV/copy-paste) y exportación."
         },
         {
           question: "¿Qué incluye Marketing 360?",
-          answer: "Marketing 360 es un módulo del Plan Pro (próximamente) e incluye: landings y constructor web, formularios con RGPD, embudos de lead magnet, CRM de contactos, email marketing con automatizaciones (hasta 2.000 emails/mes), pipeline de leads, QR trackeables y métricas de conversión. Este módulo no está incluido en la licencia Founders."
+          answer: "Marketing 360 es parte del Plan Pro e incluye: landings y formularios RGPD, CRM, emails esenciales y automatizaciones, pipeline básico de leads, QR trackeables e integración con GHL."
         },
       ]
     },
@@ -70,24 +70,24 @@ const FAQ = () => {
       title: "Limitaciones y planes",
       faqs: [
         {
-          question: "¿Qué NO es Publify?",
+          question: "¿Qué NO es Publify en el MVP?",
           answer: "No es el panel de KDP (no sube ni edita en Amazon). No es una spy tool tipo Helium10. No es un gestor de Ads dentro de la app. No es un maquetador/diseñador. No es contabilidad completa."
         },
         {
           question: "¿Hay fechas cerradas para funcionalidades futuras?",
-          answer: "No. Publify está en evolución constante y no hay compromiso de fechas cerradas para funcionalidades futuras."
+          answer: "No. Publify está en fase de evolución y no hay compromiso de fechas cerradas para funcionalidades futuras."
         },
         {
           question: "¿Qué incluye la licencia Founders (Plus lifetime)?",
-          answer: "Incluye acceso de por vida al Plan Plus con todas las mejoras y funcionalidades que se incluyan en ese plan. Si necesitas más libros, podrás ampliar en paquetes de 10 (precio por definir). Para acceder al Plan Pro, los Founders pagarán solo la diferencia de precio (hasta 99€). Marketing 360 y otros módulos del Plan Pro no están incluidos en la licencia Founders."
+          answer: "Incluye acceso de por vida al Plan Plus y acceso a mejoras/funcionalidades incluidas dentro del Plan Plus. No incluye ampliaciones, add-ons, servicios, planes superiores (Pro) o elementos fuera de Plus."
         },
         {
           question: "¿Cuánto es el pago total de Founders?",
-          answer: "El total es 299€ (49€ de reserva + 250€ al lanzamiento). Es un pago único que te da acceso de por vida al Plan Plus. Nunca más tendrás que pagar la suscripción mensual."
+          answer: "El total es 299€ (tras completar el pago después de la reserva de 49€). Equivale a aproximadamente 8 meses del Plan Plus."
         },
         {
           question: "¿Qué pasa con el precio del Plan Plus en el futuro?",
-          answer: "El precio inicial del Plan Plus es 49€/mes y puede modificarse para nuevos clientes a medida que aumente el valor del plan. Los Founders mantienen su acceso de por vida bloqueado."
+          answer: "El precio inicial del Plan Plus es 39,99€/mes y puede modificarse para nuevos clientes a medida que aumente el valor del plan. Los Founders mantienen su precio bloqueado."
         },
       ]
     },

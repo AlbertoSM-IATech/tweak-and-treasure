@@ -13,8 +13,8 @@ const AVAILABLE_SPOTS = TOTAL_SPOTS - OCCUPIED_SPOTS;
 
 const FoundersProgram = () => {
   const benefits = [
-    "Licencia lifetime del Plan Plus",
-    "Todas las actualizaciones del Plan Plus incluidas",
+    "Acceso de por vida al precio de fundador",
+    "Todas las actualizaciones incluidas",
     "Acceso anticipado a nuevas funciones",
     "Grupo privado de fundadores",
     "Soporte directo con el equipo",
@@ -45,7 +45,7 @@ const FoundersProgram = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Sé parte del grupo exclusivo de {TOTAL_SPOTS} publishers que darán forma al futuro 
-              de Publify con una licencia lifetime del Plan Plus y beneficios únicos.
+              de Publify con beneficios únicos de por vida.
             </p>
           </div>
         </AnimatedSection>
@@ -89,7 +89,7 @@ const FoundersProgram = () => {
                 {/* Left side - Pricing */}
                 <div className="p-8 bg-primary/5 border-r border-border">
                   <div className="mb-6">
-                    <span className="text-muted-foreground text-sm">Pago único · Licencia lifetime</span>
+                    <span className="text-muted-foreground line-through text-xl font-bold">€588/año</span>
                     <div className="flex items-baseline gap-2 mt-2">
                       <span className="text-5xl font-bold text-primary">€299</span>
                       <span className="text-muted-foreground">total</span>

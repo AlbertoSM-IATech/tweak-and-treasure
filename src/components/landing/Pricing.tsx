@@ -20,7 +20,6 @@ const Pricing = () => {
         { text: "Biblioteca Editorial", included: true },
         { text: "Dashboard básico", included: true },
         { text: "Calculadora de viabilidad", included: true },
-        { text: "Gestión de Finanzas", included: false },
         { text: "Análisis de Keywords", included: false },
         { text: "Gestión de ADS", included: false },
         { text: "Soporte prioritario", included: false }
@@ -39,7 +38,6 @@ const Pricing = () => {
         { text: "Biblioteca Editorial", included: true },
         { text: "Dashboard completo", included: true },
         { text: "Calculadora de viabilidad", included: true },
-        { text: "Finanzas por libro y globales", included: true },
         { text: "Análisis de Keywords", included: true },
         { text: "Gestión de ADS", included: true },
         { text: "Soporte prioritario", included: true }
@@ -56,14 +54,9 @@ const Pricing = () => {
       features: [
         { text: "Libros ilimitados", included: true },
         { text: "Todo lo del plan Plus", included: true },
-        { text: "Marketing 360 integrado", included: true },
-        { text: "Landings y constructor web", included: true },
-        { text: "CRM de contactos + listas", included: true },
-        { text: "Email marketing + automatizaciones", included: true },
-        { text: "Hasta 2.000 emails/mes", included: true },
-        { text: "Pipeline de leads", included: true },
-        { text: "QR trackeables", included: true },
-        { text: "Métricas de conversión", included: true },
+        { text: "Módulo de Marketing", included: true },
+        { text: "Automatizaciones", included: true },
+        { text: "API access", included: true },
         { text: "Onboarding personalizado", included: true },
         { text: "Soporte 24/7", included: true }
       ]
