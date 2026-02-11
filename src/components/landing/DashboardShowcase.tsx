@@ -15,24 +15,24 @@ import img009 from "@/assets/carousel/009_generador_qr.png";
 import img010 from "@/assets/carousel/010_playground.png";
 const DashboardShowcase = () => {
   const carouselImages = [
-    { src: img001, alt: "Dashboard Principal" },
-    { src: img002, alt: "Ficha de Libro" },
-    { src: img003, alt: "Agrupación por Series" },
-    { src: img004, alt: "Calculadora de Viabilidad" },
-    { src: img005, alt: "Análisis de Keywords" },
-    { src: img006, alt: "Gestión de ADS" },
-    { src: img007, alt: "Gestor de Tareas y Notas" },
-    { src: img008, alt: "Calendario Editorial" },
-    { src: img009, alt: "Generador de QRs" },
-    { src: img010, alt: "Playground de Investigación" },
-  ];
+  { src: img001, alt: "Dashboard Principal" },
+  { src: img002, alt: "Ficha de Libro" },
+  { src: img003, alt: "Agrupación por Series" },
+  { src: img004, alt: "Calculadora de Viabilidad" },
+  { src: img005, alt: "Análisis de Keywords" },
+  { src: img006, alt: "Gestión de ADS" },
+  { src: img007, alt: "Gestor de Tareas y Notas" },
+  { src: img008, alt: "Calendario Editorial" },
+  { src: img009, alt: "Generador de QRs" },
+  { src: img010, alt: "Playground de Investigación" }];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const highlights = ["Dashboard centralizado", "Interfaz intuitiva", "Acceso desde cualquier lugar"];
   const nextSlide = () => {
-    setCurrentIndex(prev => (prev + 1) % carouselImages.length);
+    setCurrentIndex((prev) => (prev + 1) % carouselImages.length);
   };
   const prevSlide = () => {
-    setCurrentIndex(prev => (prev - 1 + carouselImages.length) % carouselImages.length);
+    setCurrentIndex((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
   };
   return <section id="dashboard" className="py-20 bg-card/50">
       <div className="container mx-auto px-4">
@@ -54,7 +54,7 @@ const DashboardShowcase = () => {
         {/* Highlights */}
         <AnimatedSection delay={0.2}>
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {highlights.map(highlight => <div key={highlight} className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-white">
+            {highlights.map((highlight) => <div key={highlight} className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/30 text-white">
                 <div className="w-2 h-2 rounded-full bg-secondary" />
                 <span className="text-sm font-medium">{highlight}</span>
               </div>)}
@@ -80,22 +80,22 @@ const DashboardShowcase = () => {
               </>}
 
             {/* Stats overlay */}
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-8 bg-card border border-border rounded-xl px-8 py-4 shadow-xl">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">1</div>
-                <div className="text-xs text-muted-foreground">Plataforma</div>
-              </div>
-              <div className="w-px h-10 bg-border" />
-              <div className="text-center">
-                <div className="text-2xl font-bold text-secondary">1</div>
-                <div className="text-xs text-muted-foreground">Fuente de verdad</div>
-              </div>
-              <div className="w-px h-10 bg-border" />
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">24/7</div>
-                <div className="text-xs text-muted-foreground">Disponible</div>
-              </div>
-            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             {/* Dots indicator - Only show if more than 1 image */}
             {carouselImages.length > 1 && <div className="flex justify-center gap-2 mt-12">
