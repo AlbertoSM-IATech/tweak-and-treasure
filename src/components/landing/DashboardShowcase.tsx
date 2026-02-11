@@ -34,7 +34,7 @@ const DashboardShowcase = () => {
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
   };
-  return <section id="dashboard" className="py-20 bg-card/50">
+  return <section id="dashboard" className="py-20 bg-card/90">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <AnimatedSection>
