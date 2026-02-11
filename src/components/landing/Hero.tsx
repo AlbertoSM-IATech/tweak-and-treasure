@@ -130,7 +130,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.7 }}>
 
-            <img src={publifyLogoFull} alt="Publify Logo" className="h-12 md:h-16 w-auto" />
+            
           </motion.div>
 
           <div className="relative rounded-xl overflow-visible border border-border shadow-2xl glow-primary">
