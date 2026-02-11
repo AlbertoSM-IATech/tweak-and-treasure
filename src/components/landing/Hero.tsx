@@ -8,17 +8,17 @@ const NOTION_FORM_URL = "https://wild-paperback-a33.notion.site/2f083e512fb2809a
 
 const Hero = () => {
   const pillItems = [
-    { icon: Search, label: "Investiga" },
-    { icon: PenTool, label: "Crea" },
-    { icon: BarChart3, label: "Analiza" },
-    { icon: Rocket, label: "Escala" },
-  ];
+  { icon: Search, label: "Investiga" },
+  { icon: PenTool, label: "Crea" },
+  { icon: BarChart3, label: "Analiza" },
+  { icon: Rocket, label: "Escala" }];
+
 
   const features = [
-    { icon: BookOpen, label: "Ficha por libro" },
-    { icon: Key, label: "Análisis de Keywords" },
-    { icon: Target, label: "Gestión de ADS" },
-  ];
+  { icon: BookOpen, label: "Ficha por libro" },
+  { icon: Key, label: "Análisis de Keywords" },
+  { icon: Target, label: "Gestión de ADS" }];
+
 
   return (
     <section className="relative pt-32 pb-20 overflow-hidden">
@@ -32,8 +32,8 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
+
             <Badge variant="outline" className="mb-6 px-4 py-2 border-primary/50 bg-primary/10 text-primary font-medium">
               🎯 Programa de Fundadores - Solo 20 plazas
             </Badge>
@@ -41,22 +41,22 @@ const Hero = () => {
 
           {/* Main Title */}
           <motion.h1
-            className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight max-w-5xl mx-auto"
+            className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight max-w-full mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
+            transition={{ duration: 0.5, delay: 0.1 }}>
+
             El Sistema Operativo{" "}
             <span className="text-primary">Editorial</span> para Publishers KDP
           </motion.h1>
 
           {/* Subtitle */}
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto"
+            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-full mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+            transition={{ duration: 0.5, delay: 0.2 }}>
+
             Centraliza la operativa de tu editorial KDP en un único panel. Cada libro tiene su ficha y todo gira alrededor: investigación, producción, finanzas y marketing. Menos dispersión, más claridad para decidir.
           </motion.p>
 
@@ -65,14 +65,14 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-3 mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            {pillItems.map(item => (
-              <div key={item.label} className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border">
+            transition={{ duration: 0.5, delay: 0.3 }}>
+
+            {pillItems.map((item) =>
+            <div key={item.label} className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border">
                 <item.icon className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium text-white">{item.label}</span>
               </div>
-            ))}
+            )}
           </motion.div>
 
           {/* CTA Buttons */}
@@ -80,13 +80,13 @@ const Hero = () => {
             className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
+            transition={{ duration: 0.5, delay: 0.4 }}>
+
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg glow-primary"
-              onClick={() => window.open(NOTION_FORM_URL, "_blank")}
-            >
+              onClick={() => window.open(NOTION_FORM_URL, "_blank")}>
+
               Reservar mi Plaza
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -94,8 +94,8 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="font-semibold px-8 py-6 text-lg border-border hover:bg-card"
-              onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
-            >
+              onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}>
+
               Ver Funcionalidades
             </Button>
           </motion.div>
@@ -105,14 +105,14 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            {features.map(feature => (
-              <div key={feature.label} className="flex items-center gap-2 text-sm text-muted-foreground">
+            transition={{ duration: 0.5, delay: 0.5 }}>
+
+            {features.map((feature) =>
+            <div key={feature.label} className="flex items-center gap-2 text-sm text-muted-foreground">
                 <feature.icon className="h-4 w-4 text-secondary" />
                 <span>{feature.label}</span>
               </div>
-            ))}
+            )}
           </motion.div>
         </div>
 
@@ -121,15 +121,15 @@ const Hero = () => {
           className="relative max-w-4xl mx-auto px-10 md:px-16"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.6 }}
-        >
+          transition={{ duration: 0.7, delay: 0.6 }}>
+
           {/* Logo above image */}
           <motion.div
             className="flex justify-center mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.7 }}
-          >
+            transition={{ duration: 0.5, delay: 0.7 }}>
+
             <img src={publifyLogoFull} alt="Publify Logo" className="h-12 md:h-16 w-auto" />
           </motion.div>
 
@@ -137,8 +137,8 @@ const Hero = () => {
             <img
               alt="Publify Dashboard - Antes y Después"
               className="w-full h-auto object-cover"
-              src="/lovable-uploads/1505b5cd-6525-42f7-8ec2-abd33da406e2.png"
-            />
+              src="/lovable-uploads/1505b5cd-6525-42f7-8ec2-abd33da406e2.png" />
+
 
             {/* Before Badge - smaller */}
             <motion.div
@@ -148,9 +148,9 @@ const Hero = () => {
               transition={{
                 opacity: { duration: 0.5, delay: 1.0 },
                 x: { duration: 0.5, delay: 1.0 },
-                y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.0 },
-              }}
-            >
+                y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.0 }
+              }}>
+
               <div className="flex items-center gap-2.5">
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-destructive/30">
                   <svg className="w-4 h-4 text-destructive" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -172,9 +172,9 @@ const Hero = () => {
               transition={{
                 opacity: { duration: 0.5, delay: 1.2 },
                 x: { duration: 0.5, delay: 1.2 },
-                y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 },
-              }}
-            >
+                y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }
+              }}>
+
               <div className="flex items-center gap-2.5">
                 <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
                   <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -190,8 +190,8 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
