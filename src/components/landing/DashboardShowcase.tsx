@@ -3,16 +3,28 @@ import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./AnimatedSection";
-import dashboardPreview from "@/assets/dashboard-preview.png";
+import img001 from "@/assets/carousel/001_dashboard_principal.png";
+import img002 from "@/assets/carousel/002_ficha_de_libro.png";
+import img003 from "@/assets/carousel/003_agrupacion_series.png";
+import img004 from "@/assets/carousel/004_calculadora_viabilidad.png";
+import img005 from "@/assets/carousel/005_analisis_keywords.png";
+import img006 from "@/assets/carousel/006_gestion_ads.png";
+import img007 from "@/assets/carousel/007_gestor_tareas.png";
+import img008 from "@/assets/carousel/008_calendario_editorial.png";
+import img009 from "@/assets/carousel/009_generador_qr.png";
+import img010 from "@/assets/carousel/010_playground.png";
 const DashboardShowcase = () => {
-  // Carousel images - add more images here as needed
-  // To add images: import them at the top and add to this array
   const carouselImages = [
-    { src: dashboardPreview, alt: "Dashboard Principal" },
-    // { src: imagen2, alt: "Vista de Biblioteca" },
-    // { src: imagen3, alt: "Análisis de Keywords" },
-    // { src: imagen4, alt: "Gestión Financiera" },
-    // { src: imagen5, alt: "Panel de Marketing" },
+    { src: img001, alt: "Dashboard Principal" },
+    { src: img002, alt: "Ficha de Libro" },
+    { src: img003, alt: "Agrupación por Series" },
+    { src: img004, alt: "Calculadora de Viabilidad" },
+    { src: img005, alt: "Análisis de Keywords" },
+    { src: img006, alt: "Gestión de ADS" },
+    { src: img007, alt: "Gestor de Tareas y Notas" },
+    { src: img008, alt: "Calendario Editorial" },
+    { src: img009, alt: "Generador de QRs" },
+    { src: img010, alt: "Playground de Investigación" },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const highlights = ["Dashboard centralizado", "Interfaz intuitiva", "Acceso desde cualquier lugar"];
